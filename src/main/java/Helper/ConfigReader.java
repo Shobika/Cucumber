@@ -7,7 +7,7 @@ import java.util.Properties;
 
 public class ConfigReader {
 
-    public static String getProperty(String propertyName) throws IOException {
+    public String getProperty(String propertyName) throws IOException {
         Properties prop = new Properties();
         FileInputStream file = new FileInputStream(System.getProperty("user.dir")+"/src/test/resources/cucumber.properties");
         prop.load(file);
