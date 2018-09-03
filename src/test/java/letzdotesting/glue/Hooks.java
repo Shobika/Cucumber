@@ -1,6 +1,7 @@
 package letzdotesting.glue;
 
 import Helper.RunTimeContext;
+import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -10,5 +11,10 @@ public class Hooks {
     public void setUp(){
         System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"//drivers//chromedriver//chromedriver");
         RunTimeContext.driver = new ChromeDriver();
+    }
+
+    @After
+    public void tearDown(){
+        RunTimeContext.driver.quit();
     }
 }
