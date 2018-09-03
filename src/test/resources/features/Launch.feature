@@ -1,5 +1,5 @@
 Feature: Test Feature
 
-  @Test1
+  @Check
   Scenario: Launch My site
     Given I launch my site
