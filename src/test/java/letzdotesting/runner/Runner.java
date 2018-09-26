@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/resources/features/Launch.feature",
         glue = "letzdotesting.glue",
-        tags = "@Test1"
+        tags = "@Check"
 )
 
 public class Runner {
